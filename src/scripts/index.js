@@ -2,6 +2,7 @@
 var React = require('../../node_modules/react/react.js');
 var ReactDOM = require('../../node_modules/react-dom/index.js');
 
+import Gallery from './jsx/gallery.jsx';
 
 //获取图片相关的数据，
 var imageDatas = require('../data/imageData.json');
@@ -11,24 +12,10 @@ var imageDatas = require('../data/imageData.json');
 imageDatas = (function getImageURL(imageDatas){
 	for(var i=0 ;i < imageDatas.length; i++){
 		var singleImage = imageDatas[i];
-		singleImage.imagelURL = '../images/' + singleImage.fileName;
+		singleImage.imageURL = './images/' + singleImage.fileName;
 		imageDatas[i] = singleImage;
 	}
 	return imageDatas;
 })(imageDatas);
-
-class Gallery extends React.Component{
-	constructor(props){
-		super(props);
-	}
-	render(){
-
-		return(
-			<section className="stage">
-				<section className="img-sec"></section>
-				<nav className="control-nav"></nav>
-			</section>);
-	}
-}
 
 ReactDOM.render(<Gallery imageDatas={imageDatas} />,document.getElementById('main'));

@@ -26,6 +26,31 @@ html, body {
   background-color: #ddd;
 }
 
+.img-sec .img-figure {
+  position: absolute;
+  width: 290px;
+  height: 270px;
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.img-sec .img-figure img {
+  width: 250px;
+  height: 184px;
+}
+
+.img-sec .img-figure figcaption {
+  text-align: center;
+}
+
+.img-sec .img-figure figcaption .img-title {
+  margin: 10px 0 0 0;
+  color: #a7a0a2;
+  font-size: 16px;
+}
+
 /* image-end */
 /* cintroller-start */
 .control-nav {
