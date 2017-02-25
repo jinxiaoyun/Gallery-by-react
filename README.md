@@ -6,7 +6,7 @@
 ## js 基础库 ##
 
 ```
-js 使用 zepto fastclick
+js 使用 jquery
 ```
 
 ###  安装使用 ###

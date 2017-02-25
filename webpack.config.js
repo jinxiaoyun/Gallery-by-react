@@ -39,6 +39,11 @@ module.exports.getConfig = function(type) {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loader: 'json-loader'
       }]
     },
     resolve: {

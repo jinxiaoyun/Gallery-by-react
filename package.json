@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "gulp-size": "^2.1.0",
+    "json-loader": "^0.5.4",
     "normalize.css": "^4.0.0",
     "reflux": "^0.4.0",
     "zepto": "git+https://github.com/madrobby/zepto.git"
